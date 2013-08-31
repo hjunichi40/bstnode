@@ -1,84 +1,108 @@
 extends layout
  
 block content
-    .navbar.navbar-default.navbar-fixed-top
-      .container
-        .navbar-header
-          a.navbar-brand(href='../') Bootswatch
-          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-main')
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
+  .navbar.navbar-default.navbar-fixed-top
     .container
-      #banner.page-header
-        .row
-          .col-lg-6
-            h1 Slate
-            p.lead Shades of gunmetal gray
-      // Forms
-      .col-lg-8
-          .panel.panel-default
-            .panel-body
-              .bs-docs-section
-                .row
-                  .col-lg-12
-                    .page-header
-                      h1#forms Forms
-                .row
-                  .col-lg-6
-                    .well
-                      form.bs-example.form-horizontal
-                        fieldset
-                          legend Legend
-                          .form-group
-                            label.col-lg-2.control-label(for='inputEmail') Email
-                            .col-lg-10
-                              input#inputEmail.form-control(type='text', placeholder='Email')
-                          .form-group
-                            label.col-lg-2.control-label(for='inputPassword') Password
-                            .col-lg-10
-                              input#inputPassword.form-control(type='password', placeholder='Password')
-                              .checkbox
-                                label
-                                  input(type='checkbox')
-                                  | Checkbox
-                          .form-group
-                            label.col-lg-2.control-label(for='textArea') Textarea
-                            .col-lg-10
-                              textarea#textArea.form-control(rows='3')
-                              span.help-block
-                                | A longer block of help text that breaks onto a new line and may extend beyond one
-                                | line.
-                          .form-group
-                            label.col-lg-2.control-label Radios
-                            .col-lg-10
-                              .radio
-                                label
-                                  input#optionsRadios1(type='radio', name='optionsRadios', value='option1', checked='')
-                                  | Option one is this
-                              .radio
-                                label
-                                  input#optionsRadios2(type='radio', name='optionsRadios', value='option2')
-                                  | Option two can be something else
-                          .form-group
-                            label.col-lg-2.control-label(for='select') Selects
-                            .col-lg-10
-                              select#select.form-control
-                                option 1
-                                option 2
-                                option 3
-                                option 4
-                                option 5
-                              br
-                              select.form-control(multiple='')
-                                option 1
-                                option 2
-                                option 3
-                                option 4
-                                option 5
-                          .form-group
-                            .col-lg-10.col-lg-offset-2
-                              button.btn.btn-default Cancel
-                              button.btn.btn-primary(type='submit') Submit
+      .navbar-header
+        a.navbar-brand(href='../') Aoyama Bussines School (ABS)
+  .container
+    .page-header
+      .row
+        .col-lg
+          h1 ABS オリジナルパーカー
+          p.lead （申し込みSite）
+          h4 ABSドーナツ倶楽部2013のオフィシャルパーカーです！<br/>
+          h4 10ozの良質な素材を使った今年だけの商品です、ぜひご予約を！！<br/>
+          img(src='/images/1267294_504460109643498_658050298_o.jpg', width='124', height='82.7')<br/><br/>
+    .row
+      .col-lg
+        今年のABSドーナツクラブのビジョンは、<br/>
+        b  「明るく、楽しく、美味しいドーナツ。ＡＢＳドーナツは世界を救う！！」
+        | です。<br/>収益は震災孤児の学業支援団体への寄付を検討しています。
+        | などなどつらつらと記載するスペース。
+
+    .page-header
+        .col-lg
+        .bs-docs-section
+          .row
+            .col-lg
+              h4 商品情報(パーカー)
+    .col-lg
+      .row-fluid
+         ul.thumbnails
+           li.span5
+            .thumbnail
+              img(src='/images/236250d2571772d540e5_460x460.jpeg', alt='パーカー')
+              .caption
+                h3 パーカー (黒)
+                p 生地厚：10.0oz(オンス)<br/>金額：4,000円<br/>素材：綿100%、裏バイル
+                p
+                  サイズ S     M     L     XL<br/>
+                  |着丈  61  65  69  74<br/>
+                  |身幅  52  55  58  63<br/>
+                  |袖丈  56  60  61  62
+    // Forms
+    .col-lg
+    .bs-docs-section
+    .page-header
+      .row
+        .col-lg
+            h4#forms お客様情報
+      .row
+        .col-lg
+          .well
+            form.bs-example.form-horizontal
+              fieldset
+                legend 入力項目
+                .form-group
+                  label.col-lg-2.control-label(for='inputEmail') Email
+                  .col-lg-4
+                    input#inputEmail.form-control(type='text', placeholder='Email')
+                .form-group
+                  label.col-lg-2.control-label(for='inputPassword') Password
+                  .col-lg-4
+                    input#inputPassword.form-control(type='password', placeholder='Password')
+                    .checkbox
+                      label
+                        input(type='checkbox')
+                        | Checkbox
+                .form-group
+                  label.col-lg-2.control-label(for='textArea') Textarea
+                  .col-lg-4
+                    textarea#textArea.form-control(rows='3')
+                    span.help-block
+                      | A longer block of help text that breaks onto a new line and may extend beyond one
+                      | line.
+                .form-group
+                  label.col-lg-2.control-label Radios
+                  .col-lg-4
+                    .radio
+                      label
+                        input#optionsRadios1(type='radio', name='optionsRadios', value='option1', checked='')
+                        | Option one is this
+                    .radio
+                      label
+                        input#optionsRadios2(type='radio', name='optionsRadios', value='option2')
+                        | Option two can be something else
+                .form-group
+                  label.col-lg-2.control-label(for='select') Selects
+                  .col-lg-4
+                    select#select.form-control
+                      option 1
+                      option 2
+                      option 3
+                      option 4
+                      option 5
+                    br
+                    select.form-control(multiple='')
+                      option 1
+                      option 2
+                      option 3
+                      option 4
+                      option 5
+                .form-group
+                  .col-lg-6.col-lg-offset-2
+                    button.btn.btn-primary(type='submit') Submit
+                    button.btn.btn-default Cancel
 
   div.footer
